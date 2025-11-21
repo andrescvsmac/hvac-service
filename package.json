@@ -1,0 +1,37 @@
+{
+  "name": "hvac-sensor-service",
+  "version": "1.0.0",
+  "description": "HVAC sensor event ingestion and diagnostics service",
+  "main": "dist/index.js",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "seed": "tsx src/seeder.ts",
+    "demo": "tsx src/demo.ts"
+  },
+  "keywords": [
+    "hvac",
+    "sensor",
+    "diagnostics"
+  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.0",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.3.3"
+  }
+}
