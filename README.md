@@ -130,6 +130,8 @@ Ingest a new HVAC sensor event.
 }
 ```
 
+> **NOTE**: When a request with invalid or missing fields is made, the server should respond with a `400 Bad Request` status and a "Invalid event data" error message.
+
 **Response:**
 
 ```json
